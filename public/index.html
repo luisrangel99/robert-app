@@ -4,10 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="./assets/styles/main.css">
 </head>
 <body>
     <div class="container">
-        
+        <div class="header"></div>
+        <div class="main">
+            <div class="form-login">
+                <img src="./assets/img/usuario (1).png" alt="" class="avatar">
+                <form>
+                    <div class="user">
+                        <p class="text-login">Usuario</p>
+                        <input type="text" id="user">
+                    </div>
+                    <div class="password">
+                        <p class="text-login">Contraseña</p>
+                        <input type="password" id="password">
+                    </div>
+                    <button id="btn-login">Entrar</button>
+                </form>
+                <a href="#" class="forgotten-password">¿Has olvidado tu contraseña?</a>
+            </div>
+        </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>

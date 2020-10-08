@@ -1,0 +1,82 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 7% 93%;
+    grid-template-areas: "header" "main";
+}
+
+.container .header {
+    grid-area: header;
+    background: #6E1F1F;
+}
+
+.container .main {
+    grid-area: main;
+    background: #6e1f1f7e;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .main .form-login {
+    background: #6d1e1e46;
+    padding: 20px 80px 70px;
+    border-radius: 20px;
+}
+
+.container .main .form-login p {
+    display: block;
+    text-align: center;
+    color: #fff;
+    font: sans-serif;
+}
+
+.container .main .form-login input {
+    display: block;
+    margin-bottom: 7px;
+    border: 1px solid #6D1E1E;
+    border-radius: 30px;
+    padding: 10px 7px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.container .main .form-login a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container .main .form-login a:hover{
+    text-decoration: underline;
+}
+
+.container .main .form-login button {
+    display: block;
+    border: transparent;
+    color: #fff;
+    background: #6D1E1E;
+    font-size: 15px;
+    border-radius: 15px;
+    padding: 11px 13px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.container .main .form-login input:focus,
+.container .main .form-login button:focus {
+    outline: none;
+}
+
+.container .main .form-login img {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
